@@ -58,18 +58,12 @@ async function deleteFile() {
         console.error("Error deleting file:", err);
     }
 }
-
-
 export default {
     createFile,
     readFile,
     appendToFile,
     deleteFile
 };
-
-
-// Function calling
-
 await createFile([
     {
         name: "Aditya",
@@ -78,7 +72,6 @@ await createFile([
 ]);
 
 await readFile();
-
 await appendToFile({
     name: "Rahul",
     age: 22
